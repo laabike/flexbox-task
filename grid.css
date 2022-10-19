@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: auto;
+  width: 1000px
+}
+
+.div-body {
+    height: 789px;
+    background: #222;
+}
+
+header {
+    background: #222;
+}
+
+header button {
+    background: #e67300;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 50px 45px;
+    padding: 10px;
+    color: #fff;
+}
+
+.box1 {
+    background: #cc66ff;
+    color: #fff;
+    width: 450px;
+    height: 250px;
+}
+
+.box2 {
+    background: #5c85d6;
+    color: #fff;
+    width: 250px;
+    height: 250px;
+}
+
+.box3 {
+    background: #ffaa00;
+    color: #fff;
+    width: 300px;
+    height: 300px;
+    padding: 0;
+}
+
+.box4 {
+    background: #00e673;
+    color: #fff;
+    width: 400px;
+    height: 125px;
+    padding-left: -400px;
+}
+
+.box5 {
+    background: #00e673;
+    color: #fff;
+    width: 400px;
+    height: 145px;
+    padding-left: -400px;
+}
+
+.main-container {
+    background: #222;
+    width: 1600px;
+    top: 0;
+}
+
+.upper-div {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    gap:65px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    margin: 100px 20px;
+}
+
+.lower-div {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    /* gap: 5px; */
+    position: absolute;
+    top: 370px;
+    left: 38px;
+}
+
+.lower-right-div {
+    position: absolute;
+    left: 315px;
+}
+
+.box4 {
+    height: 135px;
+}
+
+.box5 {
+    margin-top: 17px;
+    height: 148px;
+}
+
+@media only screen and (max-width: 375px) {
+    .div-body {
+        width: 375px;
+    }
+
+    header button {
+        margin: 100px 17px;
+        padding: 7px;
+    }
+    
+    .box1 {
+        width: 190px;
+        height: 120px;
+    }
+    
+    .box2 {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .box3 {
+        width: 150px;
+        height: 150px;
+        padding: 0;
+    }
+    
+  .box4 {
+        width: 190px;
+        height: 85px;
+    }
+
+    .box5 {
+        width: 190px;
+        height: 100px;
+        padding-left: -400px;
+    }
+    
+    .upper-div {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        gap:5px;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        margin: 110px 5px;
+    }
+    
+    .lower-div {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        gap: 5px;
+        position: absolute;
+        top: 300px;
+        left: 15px;
+    }
+    
+    .box4 {
+        height: 64px;
+        width: 165px;
+        position: absolute;
+        left: -155px;
+        top: 0;
+    }
+    
+    .box5 {
+        height: 75px;
+        width: 165px;
+        position: absolute;
+        left: -155px;
+        top:58px;
+    } 
+}

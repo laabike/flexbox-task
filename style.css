@@ -29,6 +29,12 @@ p {
     word-spacing: -1.6px;
 }
 
+.div-body {
+  position: absolute;
+  top:0;
+  left: 340px;
+}
+
 .main-container {
     width: 50%;
     margin: auto;
@@ -37,20 +43,26 @@ p {
     align-items: center;
     height: 732px;
     position: relative;
-    top: 0;
-}
-
-.dot {
-    height: 40px;
-    width: 40px;
-    border-radius: 50px;
-    display: inline-block;
-    background-color: #fff;
+    top: -100px;
 }
 
 img {
     width: 40px;
-    height: 40px;
+    height: 35px;
+}
+
+.grid-task {
+    text-align: center;
+    justify-content: center;
+}
+
+#button {
+    background: #e67300;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 50px 360px 0px;
+    padding: 10px;
+    color: #fff
 }
 
 .orange-div {
@@ -63,21 +75,18 @@ img {
     border-bottom-left-radius:10px;
 }
 
-.orange-div .dot {
-    background: #e38826;
-}
-
 .orange-div h3 {
     font-size: 25px;
     letter-spacing: 3;
     font-weight: bold;
-    padding: 13px 0;
+    margin-top: 20px;
+    padding: 25px 0 20px;
     color: #fff;
 }
 
 .orange-div img {
     position: absolute;
-    left: 57px;
+    left: 40px;
     top: 205px;
     opacity: 0.5;
 }
@@ -90,21 +99,18 @@ img {
     width: 650px;
 }
 
-.blue-div .dot {
-    background: #004241;
-}
-
 .blue-div h3 {
     font-size: 25px;
     letter-spacing: 3;
     font-weight: bold;
-    padding: 13px 0;
+    margin-top: 20px;
+    padding: 25px 0 20px;
     color: #fff;
 }
 
 .blue-div img {
    position: absolute;
-   left: 300px;
+   left: 275px;
    top: 205px;
    opacity: 0.5;
 }
@@ -119,21 +125,18 @@ img {
     border-bottom-right-radius:10px;
 }
 
-.green-div .dot {
-    background: #003332;
-}
-
 .green-div h3 {
     font-size: 25px;
     letter-spacing: 3;
     font-weight: bold;
-    padding: 13px 0;
+    margin-top: 20px;
+    padding: 25px 0 20px;
     color: #fff;
 }
  
 .green-div img {
     position: absolute;
-    left: 535px;
+    left: 515px;
     top: 205px;
     opacity: 0.5;
 }
@@ -185,89 +188,117 @@ img {
 @media only screen and (max-width: 375px) {
     body {
         width: 375px;
-        margin: auto;
+        /* margin: auto; */
+        /* height: auto; */
     }
 
     .main-container {
-        width: 50%;
+        width: 100%;
         margin: auto;
-        margin-top: 220px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
+    .grid-task {
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: -410px
+    }
+
+    header button {
+        left: 20px; 
+    }
+
     .orange-div {
-        margin: 0px 20px;
-        padding: 10px;
+        width: 100%;
+        margin-left: 90px;
+        padding: 20px;
         text-align: left;
-        height: 290px;
-        width: 280px;
-        border-top-left-radius:12px;
-        border-bottom-left-radius:0px;
-        border-top-right-radius:12px;
+        height: 390px;
+        border-top-left-radius:10px;
+        border-bottom-left-radius:10px;
     }
 
     .orange-div img {
         position: absolute;
-        left: -3px;
-        top: -35px;
-        opacity: 0.5;
-     }
+        left: 45px;
+        top: 190px;
+        width: 35px;
+        height: 30px;
+    }
+
+    .orange-div h3 {
+        margin: 40px 0 10px -15px;
+        padding: 3px 14px;
+    }
+
+    .orange-div p {
+        margin: 0px 20px 0px 2px;
+        line-height: 14px;
+    }
+
+    .blue-div p {
+        margin: 0px 10px 0px -12px;
+        line-height: 15px;
+    }
+
+    .orange-div .btn {
+        margin: 50px 0;
+        padding: 6px;
+    }
 
     .blue-div {
-        margin: 0px 20px;
-        padding: 10px;
-        text-align: left;
-        height: 290px;
-        width: 280px;
+        height: 390px;
     }
 
     .blue-div img {
         position: absolute;
-        left: -3px;
-        top: 248px;
-        opacity: 0.5;
-     }
+        left: 180px;
+        top: 190px;
+        width: 35px;
+        height: 30px;
+    }
 
-    .green-div {
-        margin: 0px 20px;
-        padding: 10px;
-        text-align: left;
-        height: 290px;
-        width: 280px;
-        border-bottom-left-radius:12px;
-        border-bottom-right-radius:12px;
-        border-top-right-radius:0px;
+    .blue-div h3 {
+        padding: 4px 10px 0 12px;
+        margin: 25px 0 10px -20px;
+        padding: 3px 14px;
+    }
+
+    .blue-div p {
+        margin: 0px 17px 0px -5px;
+        line-height: 15px;
+    }
+
+    .blue-div .btn {
+        margin: 25px -10px;
+        padding: 6px;
+    }
+
+    .green-div { 
+        height: 390px;
+        margin-right: 20px;
     }
     
     .green-div img {
         position: absolute;
-        left: 0;
-        top: 513px;
-        opacity: 0.5;
-    }
-
-    .dot {
-        height: 30px;
-        width: 30px;
-        margin: 10px 10px;
-        border-radius: 50px;
-        display: inline-block;
-        background-color: #fff;
-    }
-
-    .orange-div h3 {
-        padding: 4px 0;
-    }
-
-    .blue-div h3 {
-        padding: 4px 0;
+        left: 320px;
+        top: 190px;
     }
 
     .green-div h3 {
-        padding: 4px 0;
+        margin: 3px 0 0px -3px;
+        padding: -34px -13px;
+        margin: 25px 0 10px -20px;
+        padding: 3px 14px;
+    }
+
+    .green-div p {
+        margin: 0px 10px 0px -5px;
+        line-height: 15px;
     }
 
     .btn {
@@ -275,113 +306,9 @@ img {
         padding: 8px 15px;
     }
 
-    .blue-div .btn {
-        margin: 10px 10px;
-    }
-
     .green-div .btn {
-        margin: 10px 10px;
+        margin: 10px -10px;
+        padding: 6px;
     }
 }
 
-@media only screen and (max-width: 430px) {
-    body {
-        width: 375px;
-        margin: auto;
-    }
-
-    .main-container {
-        width: 50%;
-        height: 460px;
-        margin: 250px 90px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .orange-div {
-        margin: 0px 20px;
-        padding: 10px;
-        text-align: left;
-        height: 290px;
-        width: 280px;
-        border-top-left-radius:12px;
-        border-bottom-left-radius:0px;
-        border-top-right-radius:12px;
-    }
-
-    .orange-div img {
-        position: absolute;
-        left: -3px;
-        top: -170px;
-        opacity: 0.5;
-     }
-
-    .blue-div {
-        margin: 0px 20px;
-        padding: 10px;
-        text-align: left;
-        height: 290px;
-        width: 280px;
-    }
-
-    .blue-div img {
-        position: absolute;
-        left: -3px;
-        top: 113px;
-        opacity: 0.5;
-     }
-
-    .green-div {
-        margin: 0px 20px;
-        padding: 10px;
-        text-align: left;
-        height: 290px;
-        width: 280px;
-        border-bottom-left-radius:12px;
-        border-bottom-right-radius:12px;
-        border-top-right-radius:0px;
-    }
-    
-    .green-div img {
-        position: absolute;
-        left: 0;
-        top: 380px;
-        opacity: 0.5;
-    }
-
-    .dot {
-        height: 30px;
-        width: 30px;
-        margin: 10px 10px;
-        border-radius: 50px;
-        display: inline-block;
-        background-color: #fff;
-    }
-
-    .orange-div h3 {
-        padding: 4px 0;
-    }
-
-    .blue-div h3 {
-        padding: 4px 0;
-    }
-
-    .green-div h3 {
-        padding: 4px 0;
-    }
-
-    .btn {
-        margin: 27px 10px;
-        padding: 8px 15px;
-    }
-
-    .blue-div .btn {
-        margin: 10px 10px;
-    }
-
-    .green-div .btn {
-        margin: 10px 10px;
-    }
-}
